@@ -105,7 +105,7 @@ def print_solution(data, manager, routing, solution):
 
 
 
-def main():
+def create_routes():
     """Solve the CVRP problem."""
     # Instantiate the data problem.
     data = create_data_model()
@@ -153,7 +153,3 @@ def main():
     # Print solution on console.
     if solution:
         print_solution(data, manager, routing, solution)
-
-
-if __name__ == '__main__':
-    main()

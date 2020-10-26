@@ -75,7 +75,7 @@ def print_solution(data, manager, routing, solution):
     print('Total time of all routes: {}min'.format(total_time))
 
 
-def main():
+def create_routes():
     """Solve the VRP with time windows."""
     # Instantiate the data problem.
     data = create_data_model()

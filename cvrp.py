@@ -113,7 +113,7 @@ def print_solution(data, manager, routing, solution):
     print('Total load of all routes: {}'.format(total_load))
 
 
-def main():
+def create_routes():
     """Solve the CVRP problem."""
     # Instantiate the data problem.
     data = create_data_model()
