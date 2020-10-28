@@ -3,13 +3,13 @@ In this project we use or tools to solve the vehicle routing problem, the vehicl
 
 # Installation
 
-	```bash
+```bash
   install python3
   install ortools via python3 `python3 -m pip install ortools`
-	```
+```
   
 # Run 
 
-	```bash
+```bash
   python3 ./main.py
-	```
+```
