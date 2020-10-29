@@ -3,7 +3,7 @@
 from __future__ import print_function
 from ortools.constraint_solver import routing_enums_pb2
 from ortools.constraint_solver import pywrapcp
-
+import utils
 
 def create_data_model():
     """Stores the data for the problem."""
@@ -153,3 +153,6 @@ def create_routes():
     # Print solution on console.
     if solution:
         print_solution(data, manager, routing, solution)
+        # Plot solution to graph
+        driverRoutes, driverDistances = utils.getDriverRouteListFromSolution(
+            data, manager, routing, solution)

@@ -5,7 +5,7 @@ import sys
 
 if __name__ == '__main__':
     
-    routing = 'cvrp'
+    routing = 'vrp'
     if routing == 'vrp':
         create_routes()
     if routing == 'cvrp':
