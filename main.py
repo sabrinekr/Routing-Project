@@ -5,10 +5,13 @@ import sys
 
 if __name__ == '__main__':
     
-    routing = 'vrp'
+    print("we will use this algorithm", sys.argv[1])
+    routing = sys.argv[1]
     if routing == 'vrp':
         create_routes()
-    if routing == 'cvrp':
+    elif routing == 'cvrp':
         create_routes_cvrp()
-    if routing == 'vrptw':
+    elif routing == 'vrptw':
         create_routes_cvrp()
+    else:
+        print("this algorithm doesn't exist")
